@@ -1,0 +1,54 @@
+body {
+  max-width: 400px;
+  margin: auto;
+  padding-top: 210px;
+}
+
+#time {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: url(./time.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ms {
+  position: relative;
+  width: 200px;
+  height: 1px;
+  top: 194px;
+  right: -95px;
+  background-color: blue;
+  border: 3px solid blue;
+  transform: translateX(200px);
+  animation: time 3s linear infinite;
+}
+@keyframes time {
+  from {
+    transform: rotate(-170deg) translateX(90px) rotate(0deg);
+  }
+  to {
+    transform: rotate(190deg) translateX(90px) rotate(-0deg);
+  }
+}
+
+#s {
+  position: relative;
+  width: 150px;
+  height: 1px;
+  top: 185px;
+  right: -115px;
+  background-color: red;
+  border: 3px solid red;
+  transform: translateX(200px);
+  animation: sec 60s infinite;
+}
+@keyframes sec {
+  from {
+    transform: rotate(-170deg) translateX(70px) rotate(0deg);
+  }
+  to {
+    transform: rotate(190deg) translateX(90px) rotate(-0deg);
+  }
+}
